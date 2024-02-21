@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>視野角変換</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+</head>
+<body>
+
+    <section class="hero is-info">
+        <div class="hero-body">
+          <p class="title">
+            視野角変換
+          </p>
+        </div>
+      </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-half">
+                    <div class="field">
+                        <label class="label" for="sensitivity">腰撃ち感度:</label>
+                        <div class="control">
+                            <input class="input" type="text" id="sensitivity" onkeyup="calculate()">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label" for="fov1">前の視野角:</label>
+                        <div class="control">
+                            <input class="input" type="text" id="fov1" onkeyup="calculate()">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label" for="fov2">新しい視野角:</label>
+                        <div class="control">
+                            <input class="input" type="text" id="fov2" onkeyup="calculate()">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label" for="output">出力:</label>
+                        <div class="control">
+                            <input class="input" type="text" id="output" readonly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function calculate() {
+            // テキストボックスの値を取得
+            var sensitivityValue = parseFloat(document.getElementById('sensitivity').value) || 0;
+            var fov1Value = parseFloat(document.getElementById('fov1').value) || 0;
+            var fov2Value = parseFloat(document.getElementById('fov2').value) || 0;
+
+            // 計算
+            var result = (sensitivityValue * fov2Value) / fov1Value;
+
+            // 結果をoutputテキストボックスに表示
+            document.getElementById('output').value = result.toFixed(2);
+        }
+    </script>
+
+</body>
+</html>
