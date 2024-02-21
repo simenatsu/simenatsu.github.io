@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+	<meta name="theme-color" content="#2196f3">
+
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@simenatsu" />
+	<meta name="twitter:creator" content="@simenatsu" />
+	<meta property="og:url" content="https://simenatsu.github.io/beta" />
+	<meta property="og:title" content="Device Converter" />
+	<meta property="og:description" content="端末間の感度を変換します。指感度、ジャイロ感度または感覚をベースに計算。" />
+	<meta property="og:image" content="https://simenatsu.github.io/beta/images/icon.png" />
+
+	<title>Device Converter</title>
+	<!-- CSS  -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+	<link href="css/share.css" type="text/css" rel="stylesheet">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon" href="images/icon.png" sizes="120x120">
+	<link rel="icon" type="image/png" href="images/icon.png" sizes="120x120">
+	<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="section no-pad-bot" id="index-banner">
+		<div class="container">
+			<br>
+			<br>
+			<h5 class="header center red-text">Device Converter(Beta)</h5>
+			<div class="row center">
+				<h6 class="header col s12 light">ベースにする感度を入力してください。</h6>
+				<a class="waves-effect waves-light red lighten-2 btn modal-trigger" href="#modal1">使い方</a>
+
+				<div id="modal1" class="modal">
+					<div class="modal-content">
+						<h4>使い方</h4>
+						<h6>基本的に</h6>
+						<p>・指変換→「指変換」オプション<br>
+						・ジャイロ変換→「ジャイロ変換(カメラ)」オプション<br><br>
+						・ジャイロ感度は意外と無変換が1番良いです。<br><br>
+						・端末データ追加や機能追加等、要望は @simenatsu まで。
+						</p>
+					</div>
+					<div class="modal-footer">
+						<a href="#!" class="modal-close waves-effect waves-green btn-flat">閉じる</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<form class="col s12" id="select_group" onchange="calculate()">
+					<div class="row">
+						<div class="input-field col s12">
+							<select id="conversion_type">
+								<!--<optgroup label="指">-->
+									<option value="1">指変換(PPI変換)</option>
+									<option value="9">指変換(テスト)</option>
+									<option value="7">端末変換(低感度にする)</option>
+									<!--<option value="2">感覚をベースに変換</option>
+								</optgroup>
+								<optgroup label="ジャイロ">
+									<option value="3">ジャイロ変換(カメラ)</option>
+									<option value="4">ジャイロ変換(精密なリコイル)</option>
+									<option value="5">iPad⇔スマホ相互変換(ジャイロ)</option>-->
+									<option value="8">端末変換(高感度にする)</option>
+									<option value="6">感覚をベースに計算</option>
+									<option value="9">指変換(斜め方向)</option>
+									<option value="10">指逆変換(斜め方向)</option>
+									<option value="11">指変換(横方向)</option>
+									<option value="12">指変換(縦方向)</option>
+								<!--</optgroup>-->
+							</select>
+							<label>変換方法</label>
+						</div>
+					</div>
+					<div class="row" id="device_select">
+						<div class="input-field col s6">
+							<select id="device_1">
+							</select>
+							<label>変換元の端末</label>
+						</div>
+						<div class="input-field col s6">
+							<select id="device_2">
+							</select>
+							<label >変換後の端末</label>
+						</div>
+					</div>
+					<div class="row" id="scope_select" hidden>
+						<div class="input-field col s6">
+							<select id="base_scope">
+								<option value="tpp_camera" selected>TPPカメラ感度</option>
+								<option value="fpp_camera">FPPカメラ感度</option>
+								<option value="1x">1x</option>
+								<option value="2x">2x</option>
+								<option value="3x">3x</option>
+								<option value="4x">4x</option>
+								<option value="6x">6x</option>
+								<option value="8x">8x</option>
+							</select>
+							<label>ベースにするスコープ</label>
+						</div>
+						<div class="input-field col s6">
+							<input placeholder="50" id="base_sensitivity" type="tel" class="validate" onkeyup="calculate()">
+							<label for="base_sensitivity">自分にあっている感度</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s6">
+							<input placeholder="100" id="tpp_camera" type="tel" class="validate" onkeyup="calculate()">
+							<label for="tpp_camera">TPPカメラ感度</label>
+						</div>
+						<div class="input-field col s6">
+							<input placeholder="88" id="fpp_camera" type="tel" class="validate" onkeyup="calculate()">
+							<label for="fpp_camera">FPPカメラ感度</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s6">
+							<input placeholder="50" id="1x" type="tel" class="validate" onkeyup="calculate()">
+							<label for="1x">1x</label>
+						</div>
+						<div class="input-field col s6">
+							<input placeholder="30" id="2x" type="tel" class="validate" onkeyup="calculate()">
+							<label for="2x">2x</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s6">
+							<input placeholder="22" id="3x" type="tel" class="validate" onkeyup="calculate()">
+							<label for="3x">3x</label>
+						</div>
+						<div class="input-field col s6">
+							<input placeholder="14" id="4x" type="tel" class="validate" onkeyup="calculate()">
+							<label for="4x">4x</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s6">
+							<input placeholder="12" id="6x" type="tel" class="validate" onkeyup="calculate()">
+							<label for="6x">6x</label>
+						</div>
+						<div class="input-field col s6">
+							<input placeholder="10" id="8x" type="tel" class="validate" onkeyup="calculate()">
+							<label for="8x">8x</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+							<p>
+								<label>
+								<input id="round" type="checkbox" class="filled-in" value="on" onchange="calculate()">
+								<span>計算結果を四捨五入する</span>
+								</label>
+							</p>
+						</div>
+					</div>
+					<!--<div class="row">
+						<div class="input-field col s12">
+							<input disabled value="※現在編集不可" id="monitor_distance" type="tel" class="validate">
+							<label for="monitor_distance">モニターディスタンス</label>
+						</div>
+					</div>
+					<a class="waves-effect waves-light btn add">追加</a>
+					<a class="waves-effect waves-light btn del">削除</a>
+					</br>
+					</br>-->
+				</form>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row center">
+				<h5 class="center red-text text-lighten-1">出力結果</h5>
+			</div>
+			<div class="row">
+				<form class="col s12" id="select_group">
+					<div class="row">
+						<div class="input-field col s6">
+							<input disabled value=0 id="tpp_camera_out" type="tel" class="validate">
+							<label for="tpp_camera_out">TPPカメラ感度</label>
+						</div>
+						<div class="input-field col s6">
+							<input disabled value=0 id="fpp_camera_out" type="tel" class="validate">
+							<label for="fpp_camera_out">FPPカメラ感度</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s6">
+							<input disabled value=0 id="1x_out" type="tel" class="validate">
+							<label for="1x_out">1x</label>
+						</div>
+						<div class="input-field col s6">
+							<input disabled value=0 id="2x_out" type="tel" class="validate">
+							<label for="2x_out">2x</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s6">
+							<input disabled value=0 id="3x_out" type="tel" class="validate">
+							<label for="3x_out">3x</label>
+						</div>
+						<div class="input-field col s6">
+							<input disabled value=0 id="4x_out" type="tel" class="validate">
+							<label for="4x_out">4x</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s6">
+							<input disabled value=0 id="6x_out" type="tel" class="validate">
+							<label for="6x_out">6x</label>
+						</div>
+						<div class="input-field col s6">
+							<input disabled value=0 id="8x_out" type="tel" class="validate">
+							<label for="8x_out">8x</label>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="row center">
+				<h5 class="center red-text text-lighten-1">URL</h5>
+			</div>
+			<div class="row">
+				<button class="waves-effect waves-light btn red lighten-2" onClick="copyTextToClipboard()"><i class="material-icons left">content_copy</i>copy</button>
+				<input id="copy_url" type="text" value="https://simenatsu.github.io/beta" readonly>
+			</div>
+			<div class="row">
+				<div id="share">
+					<!-- twitter -->
+					<a class="twitter" href="https://twitter.com/intent/tweet?text=Device%20Converter%0D%0A%E7%AB%AF%E6%9C%AB%E9%96%93%E3%81%AE%E6%84%9F%E5%BA%A6%E3%82%92%E5%A4%89%E6%8F%9B%E3%81%97%E3%82%88%E3%81%86%EF%BC%81%0D%0A%23nvtsu%20%23%E6%84%9F%E5%BA%A6%E8%A8%88%E7%AE%97%0D%0A%20https%3A%2F%2Fsimenatsu.github.io%2Fbeta&original_referer=https://clicktotweet.com&related=clicktotweet" target="blank"><i class="fab fa-twitter"></i></a>
+					<!-- facebook -->
+					<a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://simenatsu.github.io/beta" target="blank"><i class="fab fa-facebook"></i></a>
+				</div>
+			</div>
+		</div>
+		<footer class="page-footer red">
+			<div class="footer-copyright">
+				<div class="container">© 2021 natsu —
+					<a class="white-text text-lighten-3" href="https://simenatsu.github.io">natsu</a>
+				</div>
+				<!--  Scripts-->
+				<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+				<script src="js/materialize.js"></script>
+				<script src="js/init.js"></script>
+				<script src="js/select.js"></script>
+				<script src="js/script.js"></script>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>

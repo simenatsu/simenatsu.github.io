@@ -1,0 +1,1094 @@
+{
+	"iPhone 7":{
+		"inch": 4.7,
+		"weight": 138,
+		"resolution": {
+			"width": 750,
+			"height": 1334
+		},
+		"dimensions": {
+			"height": 138.3,
+			"width": 67.1,
+			"depth":7.1
+		}
+	},
+	"iPhone 7 Plus":{
+		"inch": 5.5,
+		"weight": 188,
+		"resolution": {
+			"width": 1080,
+			"height": 1920
+		},
+		"dimensions": {
+			"height": 158.2,
+			"width": 77.9,
+			"depth":7.3
+		}
+	},
+	"iPhone 8":{
+		"inch": 4.7,
+		"weight": 148,
+		"resolution": {
+			"width": 750,
+			"height": 1334
+		},
+		"dimensions": {
+			"height": 138.4,
+			"width": 67.3,
+			"depth":7.3
+		}
+	},
+	"iPhone 8 Plus":{
+		"inch": 5.5,
+		"weight": 202,
+		"resolution": {
+			"width": 1080,
+			"height": 1920
+		},
+		"dimensions": {
+			"height": 158.4,
+			"width": 78.1,
+			"depth":7.5
+		}
+	},
+	"iPhone SE":{
+		"inch": 4.7,
+		"weight": 148,
+		"resolution": {
+			"width": 750,
+			"height": 1334
+		},
+		"dimensions": {
+			"height": 138.4,
+			"width": 67.3,
+			"depth":7.3
+		}
+	},
+	"iPhone SE(2020)":{
+		"inch": 4.7,
+		"weight": 148,
+		"resolution": {
+			"width": 750,
+			"height": 1334
+		},
+		"dimensions": {
+			"height": 138.4,
+			"width": 67.3,
+			"depth":7.3
+		}
+	},
+	"iPhone X" : {
+		"inch": 5.8,
+		"weight": 174,
+		"resolution": {
+			"width": 1125,
+			"height": 2436
+		},
+		"dimensions": {
+			"height": 143.6,
+			"width": 70.9,
+			"depth": 7.7
+		}
+	},
+	"iPhone XS" : {
+		"inch": 5.8,
+		"weight": 177,
+		"resolution": {
+			"width": 1125,
+			"height": 2436
+		},
+		"dimensions": {
+			"height": 143.6,
+			"width": 70.9,
+			"depth": 7.7
+		}
+	},
+	"iPhone XS Max" : {
+		"inch": 6.5,
+		"weight": 208,
+		"resolution": {
+			"width": 1242,
+			"height": 2688
+		},
+		"dimensions": {
+			"height": 157.5,
+			"width": 77.4,
+			"depth": 7.7
+		}
+	},
+	"iPhone XR" : {
+		"inch": 6.1,
+		"weight": 194,
+		"resolution": {
+			"width": 828,
+			"height": 1792
+		},
+		"dimensions": {
+			"height": 150.9,
+			"width": 75.7,
+			"depth": 8.3
+		}
+	},
+	"iPhone 11" : {
+		"inch": 6.1,
+		"weight": 194,
+		"resolution": {
+			"width": 828,
+			"height": 1792
+		},
+		"dimensions": {
+			"height": 150.9,
+			"width": 75.7,
+			"depth": 8.3
+		}
+	},
+	"iPhone 11 Pro" : {
+		"inch": 5.8,
+		"weight": 188,
+		"resolution": {
+			"width": 1125,
+			"height": 2436
+		},
+		"dimensions": {
+			"height": 144.0,
+			"width": 71.4,
+			"depth": 8.1
+		}
+	},
+	"iPhone 11 Pro Max" : {
+		"inch": 6.5,
+		"weight": 226,
+		"resolution": {
+			"width": 1242,
+			"height": 2688
+		},
+		"dimensions": {
+			"height": 158,
+			"width": 77.8,
+			"depth": 8.1
+		}
+	},
+	"iPhone 12 mini" : {
+		"inch": 5.4,
+		"weight": 133,
+		"resolution": {
+			"width": 1080,
+			"height": 2340
+		},
+		"dimensions": {
+			"height": 131.5,
+			"width": 64.2,
+			"depth": 7.4
+		}
+	},
+	"iPhone 12" : {
+		"inch": 6.1,
+		"weight": 162,
+		"resolution": {
+			"width": 1170,
+			"height": 2532
+		},
+		"dimensions": {
+			"height": 146.7,
+			"width": 71.5,
+			"depth": 7.4
+		}
+	},
+	"iPhone 12 Pro" : {
+		"inch": 6.1,
+		"weight": 187,
+		"resolution": {
+			"width": 1170,
+			"height": 2532
+		},
+		"dimensions": {
+			"height": 146.7,
+			"width": 71.5,
+			"depth": 7.4
+		}
+	},
+	"iPhone 12 Pro Max" : {
+		"inch": 6.7,
+		"weight": 226,
+		"resolution": {
+			"width": 1284,
+			"height": 2778
+		},
+		"dimensions": {
+			"height": 160.8,
+			"width": 78.1,
+			"depth": 7.4
+		}
+	},
+	"iPhone 13 mini" : {
+		"inch": 5.4,
+		"weight": 140,
+		"resolution": {
+			"width": 1080,
+			"height": 2340
+		},
+		"dimensions": {
+			"height": 131.5,
+			"width": 64.2,
+			"depth": 7.65
+		}
+	},
+	"iPhone 13" : {
+		"inch": 6.1,
+		"weight": 173,
+		"resolution": {
+			"width": 1170,
+			"height": 2532
+		},
+		"dimensions": {
+			"height": 146.7,
+			"width": 71.5,
+			"depth": 7.65
+		}
+	},
+	"iPhone 13 Pro" : {
+		"inch": 6.1,
+		"weight": 203,
+		"resolution": {
+			"width": 1170,
+			"height": 2532
+		},
+		"dimensions": {
+			"height": 146.7,
+			"width": 71.5,
+			"depth": 7.65
+		}
+	},
+	"iPhone 13 Pro Max" : {
+		"inch": 6.7,
+		"weight": 238,
+		"resolution": {
+			"width": 1284,
+			"height": 2778
+		},
+		"dimensions": {
+			"height": 160.8,
+			"width": 78.1,
+			"depth": 7.65
+		}
+	},
+	"iPhone 14" : {
+		"inch": 6.1,
+		"weight": 172,
+		"resolution": {
+			"width": 1170,
+			"height": 2532
+		},
+		"dimensions": {
+			"height": 146.7,
+			"width": 71.5,
+			"depth": 7.80
+		}
+	},
+	"iPhone 14 Plus" : {
+		"inch": 6.7,
+		"weight": 203,
+		"resolution": {
+			"width": 1284,
+			"height": 2778
+		},
+		"dimensions": {
+			"height": 160.8,
+			"width": 78.1,
+			"depth": 7.80
+		}
+	},
+	"iPhone 14 Pro" : {
+		"inch": 6.1,
+		"weight": 206,
+		"resolution": {
+			"width": 1179,
+			"height": 2556
+		},
+		"dimensions": {
+			"height": 147.5,
+			"width": 71.5,
+			"depth": 7.85
+		}
+	},
+	"iPhone 14 Pro Max" : {
+		"inch": 6.7,
+		"weight": 240,
+		"resolution": {
+			"width": 1290,
+			"height": 2796
+		},
+		"dimensions": {
+			"height": 160.7,
+			"width": 77.6,
+			"depth": 7.85
+		}
+	},
+	"iPhone 15" : {
+		"inch": 6.1,
+		"weight": 171,
+		"resolution": {
+			"width": 1179,
+			"height": 2556
+		},
+		"dimensions": {
+			"height": 147.6,
+			"width": 71.6,
+			"depth": 7.80
+		}
+	},
+	"iPhone 15 Plus" : {
+		"inch": 6.7,
+		"weight": 201,
+		"resolution": {
+			"width": 1290,
+			"height": 2796
+		},
+		"dimensions": {
+			"height": 160.9,
+			"width": 77.8,
+			"depth": 7.80
+		}
+	},
+	"iPhone 15 Pro" : {
+		"inch": 6.1,
+		"weight": 187,
+		"resolution": {
+			"width": 1179,
+			"height": 2556
+		},
+		"dimensions": {
+			"height": 146.6,
+			"width": 70.6,
+			"depth": 8.25
+		}
+	},
+	"iPhone 15 Pro Max" : {
+		"inch": 6.7,
+		"weight": 221,
+		"resolution": {
+			"width": 1290,
+			"height": 2796
+		},
+		"dimensions": {
+			"height": 159.9,
+			"width": 76.7,
+			"depth": 8.25
+		}
+	},
+	"Xperia 1 III" : {
+		"inch": 6.5,
+		"weight": 188,
+		"resolution": {
+			"width": 1644,
+			"height": 3840
+		},
+		"dimensions": {
+			"height": 165,
+			"width": 71,
+			"depth": 8.2
+		}
+	},
+	"Xperia 1 IV" : {
+		"inch": 6.5,
+		"weight": 187,
+		"resolution": {
+			"width": 1644,
+			"height": 3840
+		},
+		"dimensions": {
+			"height": 165,
+			"width": 71,
+			"depth": 8.2
+		}
+	},
+	"Xiaomi Mi6" : {
+		"inch": 5.15,
+		"weight": 168,
+		"resolution": {
+			"width": 1080,
+			"height": 1920
+		},
+		"dimensions": {
+			"height": 145.2,
+			"width": 70.5,
+			"depth": 7.5
+		}
+	},
+	"Xiaomi Poco F3" : {
+		"inch": 6.67,
+		"weight": 196,
+		"resolution": {
+			"width": 1080,
+			"height": 2400
+		},
+		"dimensions": {
+			"height": 163.7,
+			"width": 76.4,
+			"depth": 7.8
+		}
+	},
+	"Xiaomi 13T Pro" : {
+		"inch": 6.7,
+		"weight": 200,
+		"resolution": {
+			"width": 1220,
+			"height": 2712
+		},
+		"dimensions": {
+			"height": 162,
+			"width": 76,
+			"depth": 8.6
+		}
+	},
+	"Black Shark 3" : {
+		"inch": 6.67,
+		"weight": 222,
+		"resolution": {
+			"width": 1080,
+			"height": 2400
+		},
+		"dimensions": {
+			"height": 168.7,
+			"width": 77.3,
+			"depth": 10.4
+		}
+	},
+	"Black Shark 3S" : {
+		"inch": 6.67,
+		"weight": 222,
+		"resolution": {
+			"width": 1080,
+			"height": 2400
+		},
+		"dimensions": {
+			"height": 168.7,
+			"width": 77.3,
+			"depth": 10.4
+		}
+	},
+	"Black Shark 3 Pro" : {
+		"inch": 7.1,
+		"weight": 253,
+		"resolution": {
+			"width": 1440,
+			"height": 3120
+		},
+		"dimensions": {
+			"height": 177.8,
+			"width": 83.3,
+			"depth": 10.1
+		}
+	},
+	"Black Shark 4" : {
+		"inch": 6.67,
+		"weight": 220,
+		"resolution": {
+			"width": 1080,
+			"height": 2400
+		},
+		"dimensions": {
+			"height": 163.8,
+			"width": 76.4,
+			"depth": 9.9
+		}
+	},
+	"Black Shark 4 Pro" : {
+		"inch": 6.67,
+		"weight": 220,
+		"resolution": {
+			"width": 1080,
+			"height": 2400
+		},
+		"dimensions": {
+			"height": 163.8,
+			"width": 76.4,
+			"depth": 9.9
+		}
+	},
+	"Black Shark 5" : {
+		"inch": 6.67,
+		"weight": 218,
+		"resolution": {
+			"width": 1080,
+			"height": 2400
+		},
+		"dimensions": {
+			"height": 163.8,
+			"width": 76.3,
+			"depth": 10
+		}
+	},
+	"Black Shark 5 Pro" : {
+		"inch": 6.67,
+		"weight": 220,
+		"resolution": {
+			"width": 1080,
+			"height": 2400
+		},
+		"dimensions": {
+			"height": 163.9,
+			"width": 76.5,
+			"depth": 9.5
+		}
+	},
+	"Red Magic 5G" : {
+		"inch": 6.65,
+		"weight": 218,
+		"resolution": {
+			"width": 1080,
+			"height": 2340
+		},
+		"dimensions": {
+			"height": 168.6,
+			"width": 78.0,
+			"depth": 9.8
+		}
+	},
+	"Red Magic 5S" : {
+		"inch": 6.65,
+		"weight": 218,
+		"resolution": {
+			"width": 1080,
+			"height": 2340
+		},
+		"dimensions": {
+			"height": 168.6,
+			"width": 78.0,
+			"depth": 9.8
+		}
+	},
+	"Red Magic 6" : {
+		"inch": 6.8,
+		"weight": 220,
+		"resolution": {
+			"width": 1080,
+			"height": 2400
+		},
+		"dimensions": {
+			"height": 169,
+			"width": 77.1,
+			"depth": 9.7
+		}
+	},
+	"Red Magic 6R" : {
+		"inch": 6.67,
+		"weight": 186,
+		"resolution": {
+			"width": 1080,
+			"height": 2400
+		},
+		"dimensions": {
+			"height": 169,
+			"width": 77.09,
+			"depth": 7.8
+		}
+	},
+	"Red Magic 6 Pro" : {
+		"inch": 6.8,
+		"weight": 220,
+		"resolution": {
+			"width": 1080,
+			"height": 2400
+		},
+		"dimensions": {
+			"height": 169,
+			"width": 77.1,
+			"depth": 9.8
+		}
+	},
+	"Red Magic 6s Pro" : {
+		"inch": 6.8,
+		"weight": 215,
+		"resolution": {
+			"width": 1080,
+			"height": 2400
+		},
+		"dimensions": {
+			"height": 169.8,
+			"width": 77.2,
+			"depth": 9.5
+		}
+	},
+	"Red Magic 7" : {
+		"inch": 6.8,
+		"weight": 215,
+		"resolution": {
+			"width": 1080,
+			"height": 2400
+		},
+		"dimensions": {
+			"height": 170.6,
+			"width": 78.3,
+			"depth": 9.5
+		}
+	},
+	"Red Magic 7 Pro" : {
+		"inch": 6.8,
+		"weight": 235,
+		"resolution": {
+			"width": 1080,
+			"height": 2400
+		},
+		"dimensions": {
+			"height": 166.3,
+			"width": 77.1,
+			"depth": 10
+		}
+	},
+	"Red Magic 8 Pro" : {
+		"inch": 6.8,
+		"weight": 228,
+		"resolution": {
+			"width": 1116,
+			"height": 2480
+		},
+		"dimensions": {
+			"height": 163.98,
+			"width": 76.35,
+			"depth": 9.47
+		}
+	},
+	"Red Magic 8S Pro" : {
+		"inch": 6.8,
+		"weight": 228,
+		"resolution": {
+			"width": 1116,
+			"height": 2480
+		},
+		"dimensions": {
+			"height": 163.98,
+			"width": 76.35,
+			"depth": 9.47
+		}
+	},
+	"Red Magic 9 Pro" : {
+		"inch": 6.8,
+		"weight": 229,
+		"resolution": {
+			"width": 1116,
+			"height": 2480
+		},
+		"dimensions": {
+			"height": 163.98,
+			"width": 76.35,
+			"depth": 8.9
+		}
+	},
+	"Rog Phone 3" : {
+		"inch": 6.59,
+		"weight": 240,
+		"resolution": {
+			"width": 1080,
+			"height": 2340
+		},
+		"dimensions": {
+			"height": 171.0,
+			"width": 78.0,
+			"depth": 9.9
+		}
+	},
+	"Rog Phone 5" : {
+		"inch": 6.78,
+		"weight": 238,
+		"resolution": {
+			"width": 1080,
+			"height": 2448
+		},
+		"dimensions": {
+			"height": 173,
+			"width": 77,
+			"depth": 10
+		}
+	},
+	"Rog Phone 5 Ultimate" : {
+		"inch": 6.78,
+		"weight": 239,
+		"resolution": {
+			"width": 1080,
+			"height": 2448
+		},
+		"dimensions": {
+			"height": 173,
+			"width": 77,
+			"depth": 10
+		}
+	},
+	"Rog Phone 5 Pro" : {
+		"inch": 6.78,
+		"weight": 238,
+		"resolution": {
+			"width": 1080,
+			"height": 2448
+		},
+		"dimensions": {
+			"height": 173,
+			"width": 77,
+			"depth": 10
+		}
+	},
+	"Rog Phone 5S" : {
+		"inch": 6.78,
+		"weight": 238,
+		"resolution": {
+			"width": 1080,
+			"height": 2448
+		},
+		"dimensions": {
+			"height": 172.8,
+			"width": 77.3,
+			"depth": 9.9
+		}
+	},
+	"Rog Phone 5S Pro" : {
+		"inch": 6.78,
+		"weight": 238,
+		"resolution": {
+			"width": 1080,
+			"height": 2448
+		},
+		"dimensions": {
+			"height": 172.8,
+			"width": 77.3,
+			"depth": 9.9
+		}
+	},
+	"Galaxy S20" : {
+		"inch": 6.2,
+		"weight": 163,
+		"resolution": {
+			"width": 1440,
+			"height": 3200
+		},
+		"dimensions": {
+			"height": 163,
+			"width": 69.1,
+			"depth": 7.9
+		}
+	},
+	"Galaxy S20+" : {
+		"inch": 6.7,
+		"weight": 186,
+		"resolution": {
+			"width": 1440,
+			"height": 3200
+		},
+		"dimensions": {
+			"height": 161.9,
+			"width": 73.7,
+			"depth": 7.8
+		}
+	},
+	"Galaxy Note20" : {
+		"inch": 6.53,
+		"weight": 192,
+		"resolution": {
+			"width": 1080,
+			"height": 2400
+		},
+		"dimensions": {
+			"height": 161.6,
+			"width": 75.2,
+			"depth": 8.3
+		}
+	},
+	"Galaxy Note20 Ultra" : {
+		"inch": 6.9,
+		"weight": 208,
+		"resolution": {
+			"width": 1440,
+			"height": 3088
+		},
+		"dimensions": {
+			"height": 164.8,
+			"width": 77.2,
+			"depth": 8.1
+		}
+	},
+	"Galaxy Buddy" : {
+		"inch": 6.6,
+		"weight": 203,
+		"resolution": {
+			"width": 1080,
+			"height": 2408
+		},
+		"dimensions": {
+			"height": 167.2,
+			"width": 76.4,
+			"depth": 9
+		}
+	},
+	"OPPO Reno Ace" : {
+		"inch": 6.5,
+		"weight": 200,
+		"resolution": {
+			"width": 1080,
+			"height": 2400
+		},
+		"dimensions": {
+			"height": 161,
+			"width": 75.7,
+			"depth": 8.1
+		}
+	},
+	"OPPO Ace2" : {
+		"inch": 6.55,
+		"weight": 185,
+		"resolution": {
+			"width": 1080,
+			"height": 2400
+		},
+		"dimensions": {
+			"height": 160.0,
+			"width": 75.4,
+			"depth": 8.6
+		}
+	},
+	"OPPO Reno 5 Pro+" : {
+		"inch": 6.55,
+		"weight": 184,
+		"resolution": {
+			"width": 1080,
+			"height": 2400
+		},
+		"dimensions": {
+			"height": 159.9,
+			"width": 72.5,
+			"depth": 8
+		}
+	},
+	"OPPO Reno 6 Pro+" : {
+		"inch": 6.55,
+		"weight": 188,
+		"resolution": {
+			"width": 1080,
+			"height": 2400
+		},
+		"dimensions": {
+			"height": 160.8,
+			"width": 72.5,
+			"depth": 8
+		}
+	},
+	"iQOO Z1" : {
+		"inch": 6.57,
+		"weight": 195,
+		"resolution": {
+			"width": 1080,
+			"height": 2408
+		},
+		"dimensions": {
+			"height": 164.0,
+			"width": 75.6,
+			"depth": 8.9
+		}
+	},
+	"iQOO Neo 3" : {
+		"inch": 6.57,
+		"weight": 198,
+		"resolution": {
+			"width": 1080,
+			"height": 2408
+		},
+		"dimensions": {
+			"height": 163.7,
+			"width": 75.6,
+			"depth": 8.9
+		}
+	},
+	"Lenovo Legion Duel(Pro)" : {
+		"inch": 6.65,
+		"weight": 239,
+		"resolution": {
+			"width": 1080,
+			"height": 2340
+		},
+		"dimensions": {
+			"height": 169.2,
+			"width": 78.5,
+			"depth": 9.9
+		}
+	},
+	"Lenovo Legion Duel 2" : {
+		"inch": 6.92,
+		"weight": 262,
+		"resolution": {
+			"width": 1080,
+			"height": 2460
+		},
+		"dimensions": {
+			"height": 176,
+			"width": 78.5,
+			"depth": 10.3
+		}
+	},
+	"iPad Pro 10.5(2017)" : {
+		"inch": 10.5,
+		"weight": 469,
+		"resolution": {
+			"width": 1668,
+			"height": 2224
+		},
+		"dimensions": {
+			"height": 250.6,
+			"width": 174.1,
+			"depth": 6.1
+		}
+	},
+	"iPad 9.7(2018)" : {
+		"inch": 9.7,
+		"weight": 469,
+		"resolution": {
+			"width": 1536,
+			"height": 2048
+		},
+		"dimensions": {
+			"height": 240,
+			"width": 169.5,
+			"depth": 7.5
+		}
+	},
+	"iPad Pro 12.9(2018)" : {
+		"inch": 12.9,
+		"weight": 631,
+		"resolution": {
+			"width": 2048,
+			"height": 2732
+		},
+		"dimensions": {
+			"height": 280.6,
+			"width": 214.9,
+			"depth": 5.9
+		}
+	},
+	"iPad Pro 11" : {
+		"inch": 11.0,
+		"weight": 468,
+		"resolution": {
+			"width": 1668,
+			"height": 2388
+		},
+		"dimensions": {
+			"height": 247.6,
+			"width": 178.5,
+			"depth": 5.9
+		}
+	},
+	"iPad mini(2019)" : {
+		"inch": 7.9,
+		"weight": 300.5,
+		"resolution": {
+			"width": 1536,
+			"height": 2048
+		},
+		"dimensions": {
+			"height": 203.2,
+			"width": 134.8,
+			"depth": 6.1
+		}
+	},
+	"iPad Air(2019)" : {
+		"inch": 10.5,
+		"weight": 456,
+		"resolution": {
+			"width": 1668,
+			"height": 2224
+		},
+		"dimensions": {
+			"height": 250.6,
+			"width": 174.1,
+			"depth": 6.1
+		}
+	},
+	"iPad Pro 10.2" : {
+		"inch": 10.2,
+		"weight": 483,
+		"resolution": {
+			"width": 1620,
+			"height": 2160
+		},
+		"dimensions": {
+			"height": 250.6,
+			"width": 174.1,
+			"depth": 7.5
+		}
+	},
+	"iPad Pro 11(2020) WIFI" : {
+		"inch": 11.0,
+		"weight": 471,
+		"resolution": {
+			"width": 1668,
+			"height": 2388
+		},
+		"dimensions": {
+			"height": 247.6,
+			"width": 178.5,
+			"depth": 5.9
+		}
+	},
+	"iPad Pro 11(2020) LTE" : {
+		"inch": 11.0,
+		"weight": 473,
+		"resolution": {
+			"width": 1668,
+			"height": 2388
+		},
+		"dimensions": {
+			"height": 247.6,
+			"width": 178.5,
+			"depth": 5.9
+		}
+	},
+	"iPad Pro 12.9(2020) WIFI" : {
+		"inch": 12.9,
+		"weight": 641,
+		"resolution": {
+			"width": 2048,
+			"height": 2732
+		},
+		"dimensions": {
+			"height": 280.6,
+			"width": 214.9,
+			"depth": 5.9
+		}
+	},
+	"iPad Pro 12.9(2020) LTE" : {
+		"inch": 12.9,
+		"weight": 643,
+		"resolution": {
+			"width": 2048,
+			"height": 2732
+		},
+		"dimensions": {
+			"height": 280.6,
+			"width": 214.9,
+			"depth": 5.9
+		}
+	},
+	"iPad Pro 10.2(2020)" : {
+		"inch": 10.2,
+		"weight": 490,
+		"resolution": {
+			"width": 1620,
+			"height": 2160
+		},
+		"dimensions": {
+			"height": 250.6,
+			"width": 174.1,
+			"depth": 7.5
+		}
+	},
+	"iPad Air(2020)" : {
+		"inch": 10.9,
+		"weight": 458,
+		"resolution": {
+			"width": 1640,
+			"height": 2360
+		},
+		"dimensions": {
+			"height": 247.6,
+			"width": 178.5,
+			"depth": 6.1
+		}
+	}
+}

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="theme-color" content="#00d1b2">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@simenatsu" />
+	<meta name="twitter:creator" content="@simenatsu" />
+	<meta property="og:url" content="https://nvtsu.cf/pubgm-to-newstate" />
+	<meta property="og:title" content="NEWSTATE感度変換機" />
+	<meta property="og:description" content="PUBGMの感度をNEWSTATEの感度に変換。" />
+	<meta property="og:image" content="https://nvtsu.cf/pubgm-to-newstate/images/summary.png" />
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon" href="images/icon.png" sizes="120x120">
+	<link rel="icon" type="image/png" href="images/icon.png" sizes="120x120">
+
+	<title>PUBGMからNewState</title>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	<script src="https://kit.fontawesome.com/b466b07c0a.js" crossorigin="anonymous"></script>
+
+	<script src="js/script.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<nav class="navbar is-transparent">
+		<div class="navbar-brand">
+			<a class="navbar-item" href="">
+				<span class="icon">
+					<i class="fa-solid fa-calculator"></i>
+				</span>
+				<span>NEWSTATE感度変換機</span>
+			</a>
+		</div>
+		<div class="navbar-end">
+			<div class="navbar-item">
+				<div class="field is-grouped">
+					<p class="control">
+						<a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet"
+							data-social-target="https://twitter.com/simenatsu" target="_blank"
+							href="https://twitter.com/intent/tweet?text=PUBGMOBILE%E2%9E%A8NEWSTATE%E6%84%9F%E5%BA%A6%E5%A4%89%E6%8F%9B%E6%A9%9F%20https%3A%2F%2Fnvtsu.cf%2Fpubgm-to-newstate%20%40simenatsu%E3%82%88%E3%82%8A%20">
+							<span class="icon">
+								<i class="fab fa-twitter"></i>
+							</span>
+							<span>Tweet</span>
+						</a>
+					</p>
+					<p class="control">
+						<a class="button is-primary" href="https://twitter.com/simenatsu" target="_blank">
+							<span class="icon">
+								<i class="fab fa-twitter"></i>
+							</span>
+							<span>@simenatsu</span>
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		</div>
+	</nav>
+	<section class="hero is-primary">
+		<div class="hero-body">
+			<p class="title">
+				PUBG Mobileの感度をNEW STATEの感度に
+			</p>
+			<p class="subtitle">
+				PUBG Mobile➔NEW STATE
+			</p>
+			<!--<button class="button has-text-centered is-danger js-modal-trigger" data-target="modal-infomation">
+				使い方
+			</button>-->
+			<p class="control">
+				<a class="button has-text-centered is-danger js-modal-trigger" href="https://nvtsu.cf/newstate-to-pubgm" target="_blank">
+					NEWSTATE ➨ PUBGM
+				</a>
+			</p>
+		</div>
+	</section>
+	<section class="section">
+		<h1 class="title">PUBG Mobile感度</h1>
+	</section>
+	<div class="container">
+		<div class="tabs is-medium is-centered">
+			<ul>
+				<li class="tab is-active" onclick="openInputTab(event,'camera')"><a>カメラ感度</a></li>
+				<li class="tab" onclick="openInputTab(event,'scope')"><a>スコープ感度</a></li>
+				<li class="tab" onclick="openInputTab(event,'camera_gyro')"><a>カメラ感度(ジャイロ)</a></li>
+				<li class="tab" onclick="openInputTab(event,'scope_gyro')"><a>スコープ感度(ジャイロ)</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="container section">
+
+		<div id="camera" class="input-tab">
+			<div class="columns is-mobile">
+				<div class="column is-half">
+
+					<div class="field">
+						<label class="label">TPP</label>
+						<div class="control">
+							<input id="tpp_camera" class="input is-success" type="tel" placeholder="100"
+								onkeyup="calculate('tpp_camera','hip')">
+						</div>
+					</div>
+					<div class="field">
+						<label class="label">1x</label>
+						<div class="control">
+							<input id="1x_camera" class="input is-success" type="tel" placeholder="100"
+								onkeyup="calculate('1x_camera','normal')">
+						</div>
+					</div>
+					<div class="field">
+						<label class="label">3x</label>
+						<div class="control">
+							<input id="3x_camera" class="input is-success" type="tel" placeholder="100"
+								onkeyup="calculate('3x_camera','normal')">
+						</div>
+					</div>
+					<div class="field">
+						<label class="label">6x</label>
+						<div class="control">
+							<input id="6x_camera" class="input is-success" type="tel" placeholder="100"
+								onkeyup="calculate('6x_camera','normal')">
+						</div>
+					</div>
+
+				</div>
+				<div class="column is-half">
+					<div class="field">
+						<label class="label">FPP</label>
+						<div class="control">
+							<input id="fpp_camera" class="input is-success" type="tel" placeholder="100"
+								onkeyup="calculate('fpp_camera','hip')">
+						</div>
+					</div>
+					<div class="field">
+						<label class="label">2x</label>
+						<div class="control">
+							<input id="2x_camera" class="input is-success" type="tel" placeholder="100"
+								onkeyup="calculate('2x_camera','normal')">
+						</div>
+					</div>
+					<div class="field">
+						<label class="label">4x</label>
+						<div class="control">
+							<input id="4x_camera" class="input is-success" type="tel" placeholder="100"
+								onkeyup="calculate('4x_camera','normal')">
+						</div>
+					</div>
+					<div class="field">
+						<label class="label">8x</label>
+						<div class="control">
+							<input id="8x_camera" class="input is-success" type="tel" placeholder="100"
+								onkeyup="calculate('8x_camera','normal')">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="scope" class="input-tab" style="display:none">
+			<div class="columns is-mobile">
+				<div class="column is-half">
+
+					<div class="field">
+						<label class="label">TPP</label>
+						<div class="control">
+							<input id="tpp_scope" class="input is-success" type="tel" placeholder="100"
+								onkeyup="calculate('tpp_scope','hip')">
+						</div>
+					</div>
+					<div class="field">
+						<label class="label">1x</label>
+						<div class="control">
+							<input id="1x_scope" class="input is-success" type="tel" placeholder="100"
+								onkeyup="calculate('1x_scope','normal')">
+						</div>
+					</div>
+					<div class="field">
+						<label class="label">3x</label>
+						<div class="control">
+							<input id="3x_scope" class="input is-success" type="tel" placeholder="100"
+								onkeyup="calculate('3x_scope','normal')">
+						</div>
+					</div>
+					<div class="field">
+						<label class="label">6x</label>
+						<div class="control">
+							<input id="6x_scope" class="input is-success" type="tel" placeholder="100"
+								onkeyup="calculate('6x_scope','normal')">
+						</div>
+					</div>
+
+				</div>
+				<div class="column is-half">
+					<div class="field">
+						<label class="label">FPP</label>
+						<div class="control">
+							<input id="fpp_scope" class="input is-success" type="tel" placeholder="100"
+								onkeyup="calculate('fpp_scope','hip')">
+						</div>
+					</div>
+					<div class="field">
+						<label class="label">2x</label>
+						<div class="control">
+							<input id="2x_scope" class="input is-success" type="tel" placeholder="100"
+								onkeyup="calculate('2x_scope','normal')">
+						</div>
+					</div>
+					<div class="field">
+						<label class="label">4x</label>
+						<div class="control">
+							<input id="4x_scope" class="input is-success" type="tel" placeholder="100"
+								onkeyup="calculate('4x_scope','normal')">
+						</div>
+					</div>
+					<div class="field">
+						<label class="label">8x</label>
+						<div class="control">
+							<input id="8x_scope" class="input is-success" type="tel" placeholder="100"
+								onkeyup="calculate('8x_scope','normal')">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="camera_gyro" class="input-tab" style="display:none">
+			<div class="columns is-mobile">
+				<div class="column is-half">
+
+					<div class="field">
+						<label class="label">TPP</label>
+						<div class="control">
+							<input id="tpp_camera_gyro" class="input is-success" type="tel" placeholder="100"
+								onkeyup="calculate('tpp_camera_gyro','gyro')">
+						</div>
+					</div>
+					<div class="field">
+						<label class="label">1x</label>
+						<div class="control">
+							<input id="1x_camera_gyro" class="input is-success" type="tel" placeholder="100"
+								onkeyup="calculate('1x_camera_gyro','gyro')">
+						</div>
+					</div>
+					<div class="field">
+						<label class="label">3x</label>
+						<div class="control">
+							<input id="3x_camera_gyro" class="input is-success" type="tel" placeholder="100"
+								onkeyup="calculate('3x_camera_gyro','gyro')">
+						</div>
+					</div>
+					<div class="field">
+						<label class="label">6x</label>
+						<div class="control">
+							<input id="6x_camera_gyro" class="input is-success" type="tel" placeholder="100"
+								onkeyup="calculate('6x_camera_gyro','gyro')">
+						</div>
+					</div>
+
+				</div>
+				<div class="column is-half">
+					<div class="field">
+						<label class="label">FPP</label>
+						<div class="control">
+							<input id="fpp_camera_gyro" class="input is-success" type="tel" placeholder="100"
+								onkeyup="calculate('fpp_camera_gyro','gyro')">
+						</div>
+					</div>
+					<div class="field">
+						<label class="label">2x</label>
+						<div class="control">
+							<input id="2x_camera_gyro" class="input is-success" type="tel" placeholder="100"
+								onkeyup="calculate('2x_camera_gyro','gyro')">
+						</div>
+					</div>
+					<div class="field">
+						<label class="label">4x</label>
+						<div class="control">
+							<input id="4x_camera_gyro" class="input is-success" type="tel" placeholder="100"
+								onkeyup="calculate('4x_camera_gyro','gyro')">
+						</div>
+					</div>
+					<div class="field">
+						<label class="label">8x</label>
+						<div class="control">
+							<input id="8x_camera_gyro" class="input is-success" type="tel" placeholder="100"
+								onkeyup="calculate('8x_camera_gyro','gyro')">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="scope_gyro" class="input-tab" style="display:none">
+			<div class="columns is-mobile">
+				<div class="column is-half">
+
+					<div class="field">
+						<label class="label">TPP</label>
+						<div class="control">
+							<input id="tpp_scope_gyro" class="input is-success" type="tel" placeholder="100"
+								onkeyup="calculate('tpp_scope_gyro','gyro')">
+						</div>
+					</div>
+					<div class="field">
+						<label class="label">1x</label>
+						<div class="control">
+							<input id="1x_scope_gyro" class="input is-success" type="tel" placeholder="100"
+								onkeyup="calculate('1x_scope_gyro','gyro')">
+						</div>
+					</div>
+					<div class="field">
+						<label class="label">3x</label>
+						<div class="control">
+							<input id="3x_scope_gyro" class="input is-success" type="tel" placeholder="100"
+								onkeyup="calculate('3x_scope_gyro','gyro')">
+						</div>
+					</div>
+					<div class="field">
+						<label class="label">6x</label>
+						<div class="control">
+							<input id="6x_scope_gyro" class="input is-success" type="tel" placeholder="100"
+								onkeyup="calculate('6x_scope_gyro','gyro')">
+						</div>
+					</div>
+
+				</div>
+				<div class="column is-half">
+					<div class="field">
+						<label class="label">FPP</label>
+						<div class="control">
+							<input id="fpp_scope_gyro" class="input is-success" type="tel" placeholder="100"
+								onkeyup="calculate('fpp_scope_gyro','gyro')">
+						</div>
+					</div>
+					<div class="field">
+						<label class="label">2x</label>
+						<div class="control">
+							<input id="2x_scope_gyro" class="input is-success" type="tel" placeholder="100"
+								onkeyup="calculate('2x_scope_gyro','gyro')">
+						</div>
+					</div>
+					<div class="field">
+						<label class="label">4x</label>
+						<div class="control">
+							<input id="4x_scope_gyro" class="input is-success" type="tel" placeholder="100"
+								onkeyup="calculate('4x_scope_gyro','gyro')">
+						</div>
+					</div>
+					<div class="field">
+						<label class="label">8x</label>
+						<div class="control">
+							<input id="8x_scope_gyro" class="input is-success" type="tel" placeholder="100"
+								onkeyup="calculate('8x_scope_gyro','gyro')">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<section class="section">
+		<h1 class="title">New State感度</h1>
+	</section>
+
+	<div class="container">
+		<div class="tabs is-medium is-centered">
+			<ul>
+				<li class="outputTab is-active" onclick="openOutputTab(event,'normal')"><a>通常感度</a></li>
+				<li class="outputTab" onclick="openOutputTab(event,'gyro')"><a>ジャイロ感度</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="normal" class="section container output-tab">
+		<div class="columns is-mobile">
+			<div class="column is-half">
+				<h3 class="title is-size-5">TPP</h2>
+				<p id="tpp_camera_out">0</p>
+				<progress id="tpp_camera_progress" class="progress is-primary" value="0" max="300">0%</progress
+					id="_progress">
+				<p id="tpp_scope_out">0</p>
+				<progress id="tpp_scope_progress" class="progress is-primary" value="0" max="300">0%</progress
+					id="_progress">
+				<h3 class="title is-size-5">1x</h2>
+				<p id="1x_camera_out">0</p>
+				<progress id="1x_camera_progress" class="progress is-primary" value="0" max="300">0%</progress
+					id="_progress">
+				<p id="1x_scope_out">0</p>
+				<progress id="1x_scope_progress" class="progress is-primary" value="0" max="300">0%</progress
+					id="_progress">
+				<h3 class="title is-size-5">3x</h2>
+				<p id="3x_camera_out">0</p>
+				<progress id="3x_camera_progress" class="progress is-primary" value="0" max="300">0%</progress
+					id="_progress">
+				<p id="3x_scope_out">0</p>
+				<progress id="3x_scope_progress" class="progress is-primary" value="0" max="300">0%</progress
+					id="_progress">
+				<h3 class="title is-size-5">6x</h2>
+				<p id="6x_camera_out">0</p>
+				<progress id="6x_camera_progress" class="progress is-primary" value="0" max="300">0%</progress
+					id="_progress">
+				<p id="6x_scope_out">0</p>
+				<progress id="6x_scope_progress" class="progress is-primary" value="0" max="300">0%</progress
+					id="_progress">
+			</div>
+			<div class="column is-half">
+				<h3 class="title is-size-5">FPP</h2>
+				<p id="fpp_camera_out">0</p>
+				<progress id="fpp_camera_progress" class="progress is-primary" value="0" max="300">0%</progress
+					id="_progress">
+				<p id="fpp_scope_out">0</p>
+				<progress id="fpp_scope_progress" class="progress is-primary" value="0" max="300">0%</progress
+					id="_progress">
+				<h3 class="title is-size-5">2x</h2>
+				<p id="2x_camera_out">0</p>
+				<progress id="2x_camera_progress" class="progress is-primary" value="0" max="300">0%</progress
+					id="_progress">
+				<p id="2x_scope_out">0</p>
+				<progress id="2x_scope_progress" class="progress is-primary" value="0" max="300">0%</progress
+					id="_progress">
+				<h3 class="title is-size-5">4x</h2>
+				<p id="4x_camera_out">0</p>
+				<progress id="4x_camera_progress" class="progress is-primary" value="0" max="300">0%</progress
+					id="_progress">
+				<p id="4x_scope_out">0</p>
+				<progress id="4x_scope_progress" class="progress is-primary" value="0" max="300">0%</progress
+					id="_progress">
+				<h3 class="title is-size-5">8x</h2>
+				<p id="8x_camera_out">0</p>
+				<progress id="8x_camera_progress" class="progress is-primary" value="0" max="300">0%</progress
+					id="_progress">
+				<p id="8x_scope_out">0</p>
+				<progress id="8x_scope_progress" class="progress is-primary" value="0" max="300">0%</progress
+					id="_progress">
+			</div>
+		</div>
+	</div>
+
+	<div id="gyro" class="container output-tab" style="display:none">
+		<div class="section container ">
+			<div class="columns is-mobile">
+				<div class="column is-half">
+					<h3 class="title is-size-5">TPP</h2>
+					<p id="tpp_camera_gyro_out">0</p>
+					<progress id="tpp_camera_gyro_progress" class="progress is-primary" value="0" max="300">0%</progress
+						id="_progress">
+					<p id="tpp_scope_gyro_out">0</p>
+					<progress id="tpp_scope_gyro_progress" class="progress is-primary" value="0" max="300">0%</progress
+						id="_progress">
+					<h3 class="title is-size-5">1x</h2>
+					<p id="1x_camera_gyro_out">0</p>
+					<progress id="1x_camera_gyro_progress" class="progress is-primary" value="0" max="300">0%</progress
+						id="_progress">
+					<p id="1x_scope_gyro_out">0</p>
+					<progress id="1x_scope_gyro_progress" class="progress is-primary" value="0" max="300">0%</progress
+						id="_progress">
+					<h3 class="title is-size-5">3x</h2>
+					<p id="3x_camera_gyro_out">0</p>
+					<progress id="3x_camera_gyro_progress" class="progress is-primary" value="0" max="300">0%</progress
+						id="_progress">
+					<p id="3x_scope_gyro_out">0</p>
+					<progress id="3x_scope_gyro_progress" class="progress is-primary" value="0" max="300">0%</progress
+						id="_progress">
+					<h3 class="title is-size-5">6x</h2>
+					<p id="6x_camera_gyro_out">0</p>
+					<progress id="6x_camera_gyro_progress" class="progress is-primary" value="0" max="300">0%</progress
+						id="_progress">
+					<p id="6x_scope_gyro_out">0</p>
+					<progress id="6x_scope_gyro_progress" class="progress is-primary" value="0" max="300">0%</progress
+						id="_progress">
+				</div>
+				<div class="column is-half">
+					<h3 class="title is-size-5">FPP</h2>
+					<p id="fpp_camera_gyro_out">0</p>
+					<progress id="fpp_camera_gyro_progress" class="progress is-primary" value="0" max="300">0%</progress
+						id="_progress">
+					<p id="fpp_scope_gyro_out">0</p>
+					<progress id="fpp_scope_gyro_progress" class="progress is-primary" value="0" max="300">0%</progress
+						id="_progress">
+					<h3 class="title is-size-5">2x</h2>
+					<p id="2x_camera_gyro_out">0</p>
+					<progress id="2x_camera_gyro_progress" class="progress is-primary" value="0" max="300">0%</progress
+						id="_progress">
+					<p id="2x_scope_gyro_out">0</p>
+					<progress id="2x_scope_gyro_progress" class="progress is-primary" value="0" max="300">0%</progress
+						id="_progress">
+					<h3 class="title is-size-5">4x</h2>
+					<p id="4x_camera_gyro_out">0</p>
+					<progress id="4x_camera_gyro_progress" class="progress is-primary" value="0" max="300">0%</progress
+						id="_progress">
+					<p id="4x_scope_gyro_out">0</p>
+					<progress id="4x_scope_gyro_progress" class="progress is-primary" value="0" max="300">0%</progress
+						id="_progress">
+					<h3 class="title is-size-5">8x</h2>
+					<p id="8x_camera_gyro_out">0</p>
+					<progress id="8x_camera_gyro_progress" class="progress is-primary" value="0" max="300">0%</progress
+						id="_progress">
+					<p id="8x_scope_gyro_out">0</p>
+					<progress id="8x_scope_gyro_progress" class="progress is-primary" value="0" max="300">0%</progress
+						id="_progress">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="content has-text-centered">
+			<p>
+				<div class="container">© 2021 natsu -
+					<a href="https://twitter.com/simenatsu" target="_blank">natsu</a>
+				</div>
+			</p>
+		</div>
+	</footer>
+</body>
+
+</html>
